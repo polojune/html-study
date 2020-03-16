@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+ <div align="center">	
+ <h1>구구단</h1>
+  <table border="1">
+  <script>
+	for(i=0;i<=9; i++){
+	 document.write("<tr>");
+	 for(j=2; j<=9; j++){
+		color = "#"+Math.round(Math.random()*0xFFFFFF).toString(16);
+		if(i==0) document.write("<th><font color='"+color+"'>"+j+"단</font></th>");
+		else document.write("<td><font color='"+color+"'>"+j+" x "+i+" = "+(i*j)+"</font></td>");
+	 }
+	 document.write('</tr>');
+	}
+ </script>
+</table>
+</div>
+ </body>
+</html>

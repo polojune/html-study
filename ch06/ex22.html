@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       table {border:1px solid blue;
+              border-collapse: collapse;
+              background: darkgray;
+            }
+       td,th{
+           border:1px dotted red;
+           height: 20px;
+           width: 50px;
+           padding : 20px;
+           text-align: center;
+           color: yellow;
+           border-bottom: 1px solid gray;
+       }
+    </style>
+</head>
+<body>
+    <h3>구구단 만들기</h3>
+    <table border=1>
+        <script>
+            document.write("<tr>")
+            for (i = 2; i <= 9; i++) {
+                          
+              document.write("<td>"+i+"단</td>")
+            } 
+              document.write("</tr>");
+            for (j = 1; j <= 9; j++) {
+        
+                document.write("<tr>");
+        
+            for(i = 2;i<=9;i++) {
+                    document.write("<td>" + i + "x" + j + "=" + i*j + "</td>");
+               }
+                    document.write("</tr>");
+            }
+        </script>
+    </table>
+</body>
+</html>

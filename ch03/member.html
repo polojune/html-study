@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>회원정보</h3>
+  <form>
+     <p><label>이름:<input type="name" placeholder="이름 입력" required></label></p>
+     <p><label>아이디:<input name="id" placeholder="아이디 입력"required><input type="button" placeholder="중복확인"></p>
+     <p><label >비밀번호:<input type="password" name="pwd" placeholder="비밀번호 입력"required></label></p>
+     <p><label >비밀번호 확인:<input type="password" name="repwd" placeholder="비밀번호 입력"required></label></p>
+     <p><label >이메일:<input type="email" name="email" placeholder="Ex)ds10123@naver.com"required></label></p>
+     <p><label >이메일 수신동의:
+         <input type="radio" name="mailagree" value="yes">동의
+         <input type="radio" name="mailagree" value="no">비동의
+         </label>
+     <p> 전화번호:<select name="phone" required>
+         <option value="SKT">SKT</option>
+         <option value="KT">KT</option>
+         <option value="U+">U+</option>
+     </select>
+        
+     </p>
+         비밀번호 확인:<input type="text" placeholder="비밀 번호 확인"><br>
+      이메일:<input type="email" placeholder="Ex)ds10123@naver.com"><br>
+      이메일 수신동의:<input type="radio" value="1" name="동의"> 
+                        
+      
+      <input type="radio" value="2" name="비동의" ><br>
+      전화번호:<input type="text" list="통신사">
+            <datalist id="통신사">
+             <option value="skt">skt</option>
+             <option value="KT">kt</option>
+             <option value="lgu플러스">lgu플러스</option>
+            </datalist> 
+  </form>
+</body>
+</html>

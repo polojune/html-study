@@ -1,0 +1,5 @@
+form 작성 (name,method,action)
+method 두가지방식
+get방식-->default, 글읽기,검색
+post방식--> 글쓰기,수정
+server를 설치하는 이유는 form 기능을 직접확인하기 위해서 한다 (tomcat설치)
